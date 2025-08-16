@@ -1,0 +1,10 @@
+#box1{
+    width: 350px;
+    height: 120px;
+}
+#camera{
+    height: 320px;
+    width: 480px;
+    border: 2px dashed darkblue;
+
+}

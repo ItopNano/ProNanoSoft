@@ -1,0 +1,120 @@
+body {
+    background-color: rgba(0, 0, 0, 0.904);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 20px; /* Prevents elements from touching the screen edges */
+}
+
+.form {
+    width: 30%;
+    max-width: 500px;
+    min-width: 280px; /* Ensures it doesn't get too small */
+    min-height: auto;
+    color: rgb(156, 207, 255);
+    background: rgba(255, 255, 255, 0.089);
+    box-shadow: 0 8px 32px 0 rgba(32, 39, 136, 1.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-shadow: rgba(66, 66, 66, 0.5) 5px 5px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.h {
+    border-bottom: 2px solid white;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+}
+
+.Ai_webpages {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.Ai_webpages button {
+    background-color: #333;
+    border: 2px solid rgba(125, 160, 255, 0.87);
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px; /* Prevents too wide buttons */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Ai_webpages button:hover {
+    background-color: rgb(115, 152, 255);
+    color: rgba(2, 13, 44, 0.9);
+    font-weight: 600;
+    border-radius: 20px;
+    transform: scale(1.08);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { 
+    .form {
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .form {
+        width: 70%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Ai_webpages {
+        width: 100%;
+    }
+
+    .Ai_webpages button {
+        width: 90%;
+        max-width: 220px; /* Prevents buttons from being too large */
+    }
+}
+
+@media (max-height: 600px) { 
+    .form {
+        margin-top: 30px;
+        width: 90%;
+        padding: 10px;
+    }
+}

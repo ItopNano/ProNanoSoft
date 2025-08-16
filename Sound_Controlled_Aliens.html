@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Controlled Aliens</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link rel="icon" type="image/png" href="./Ti.png" >
+</head>
+<body>
+
+    <div class="container">
+
+        <center>
+        
+
+            <h1>Sound Controlled Aliens</h1> 
+            <h6 class="text-danger">Note: Play different sound like clap, snap, bell or mew to make the alines dance
+            </h6>
+
+            <br><br>
+
+            <div class="bg-info pt-5 pb-5">
+
+                <span class="text-center bg-dark text-light p-2 mb-5 rounded-4" style="border-radius: 20px;">Voice Result:</span>
+                <br><br>
+                <h4 id="res">I can here:</h4>
+                <h4 id="acc">Accuracy</h4>
+
+                <img src="./aliens-01.png" id="im1" alt="" width="200" height="180">
+                <img src="./aliens-2.png" id="im2" alt="" width="200" height="180">
+                <img src="./aliens-03.png" id="im3" alt="" width="200" height="180">
+                <img src="./aliens-04.png" id="im4" alt="" width="200" height="180">
+
+            </div>
+
+        </center>
+
+
+        <script src="./Sound_Controlled_Aliens.js"></script>
+
+    </div>
+
+</body>
+</html>
+

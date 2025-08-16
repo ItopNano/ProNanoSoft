@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Imagecam Identyfier</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="./Imagecam_AI.css">
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./Ti.png" >
+
+</head>
+
+<body>
+
+    <div class="hadding">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-primary" href="./index.html" style="font-size: 25px;">Profile</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="./Home.html" style="font-weight: 700;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./WebCam.html" style="font-weight: 700;">Skills</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 700;">
+                      WebPage
+                    </a>
+                    <style>
+                      .nav-link:hover {
+                         color: rgb(115, 164, 255) !important;
+                      }
+                      .nav-link:active{
+                        color: red !important;
+                      }
+                      .nav-link:focus{
+                        color: blue !important;
+                        font-size: 18px;
+                      }
+                      .dropdown-menu li a:hover{
+                        background: rgb(175, 190, 255);
+                        color: blue;
+                        opacity: .5;
+                        z-index: 0;
+                        
+                      }
+                      .dropdown-menu li a:focus{
+                        opacity: 1;
+                        color: black;
+                      }
+                  </style>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./D_Profiles.html">Profiles</a></li>
+                      <li><a class="dropdown-item" href="./Imagecam_AI.html">Imagecam AI</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./D_WebCam.html">WebCam</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true" style="font-weight: 700;">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true" style="font-weight: 700;">About</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: rgb(173, 195, 255);">
+                  <button class="btn btn-outline-light" type="submit" style="color: rgb(179, 98, 255);box-shadow: 2px 4px 5px 1px rgb(127, 76, 175); border-color: blueviolet; font-weight: 700;">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <br><br><br><br><br><br>
+    
+    <div class="container">
+
+        <center>
+
+            <h1>Image Classification</h1>
+
+            <p class="text-danger">An AI Model to rercognize the following objects</p>
+
+            <br><br>
+
+            <h1 class="fw-light">Smaqrtphone</h1>
+            <hr>
+
+            <h1 class="fw-light">Spoon</h1>
+            <hr>
+
+            <h1 class="fw-light">Water Bottle</h1>
+            <hr>
+
+            <h1 class="fw-light">Watch</h1>
+            <hr>
+
+            <br>
+
+            <h4>Webcam View</h4>
+
+            <br>
+
+            <div id="camera">
+
+            </div>
+
+            <br>
+
+            <button class="btn btn-primary" onclick="capture()">
+                Capture
+            </button>
+
+            <br><br>
+
+            <div id="pic"></div>
+
+            <br>
+
+            <button class="btn btn-danger" onclick="predict()">Predict</button>
+
+            <br><br><br>
+
+            <h5 id="label">Prediction: </h5>
+
+            <h5 id="acc">Accuracy: </h5>
+
+
+        </center>
+
+    </div>
+
+    <script src="./Imagecam_AI.js"></script>
+
+    <br><br> <br><br> <br><br>
+
+</body>
+
+
+</html>
+

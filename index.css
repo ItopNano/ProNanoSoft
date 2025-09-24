@@ -211,9 +211,12 @@ ul {
 }
 
 .about_me {
-    padding: 40px 20px;
+  padding-top: 40px;
+  display: block;
+    /* padding: 40px 20px; */
     text-align: center;
-    margin: 40px auto;
+    /* margin: 40px auto; */
+    height: 1070px;
 }
 
 .about_title {
@@ -246,6 +249,15 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 3px solid rgb(220, 223, 235);
+    background-color: rgba(247, 249, 255, 0.329);
+    border-radius: 25px;
+    height: 850px;
+    max-width: 700px;
+    padding: auto;
+    /* margin: 1px 225px 1px 225px; */
+    margin: auto;
+    box-shadow: 2px 3px rgba(199, 208, 255, 0.267);
 }
 
 .About_Profile_text {
@@ -419,22 +431,43 @@ ul {
 
 .bt_Download:hover ~ span {
   left: 5px;
-  width: calc(2 * 20px + 73px);
+  width: calc(2 * 20px + 71px);
   opacity: 1;          
 }
 
 .a_profile_about:hover ~ span {
   left: calc(
     5px +
-    (2 * 20px + 75px) +
+    (2 * 20px + 72px) +
     15px
   );
   width: calc(2 * 20px + 48px);
   opacity: 1;         
 }
 
-
-
+/* @keyframes move3T {
+  0% {
+    left: -100px;
+  }
+  10% {
+    left: calc(2px + (2 * 10px + 10px) + 5px);
+  }
+  33.33% {
+    left: -100px;
+  }
+  50% {
+    left: calc(2px + (2 * 10px + 10px) + 5px);
+  }
+  66.66% {
+    left: -100px;
+  }
+  83.33% {
+    left: calc(2px + (2 * 10px + 10px) + 5px);
+  }
+  100% {
+    left: -100px;
+  }
+} */
 
 @media (max-width: 991.98px) {
   body {

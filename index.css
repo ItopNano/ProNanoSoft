@@ -431,14 +431,14 @@ ul {
 
 .bt_Download:hover ~ span {
   left: 5px;
-  width: calc(2 * 20px + 71px);
+  width: calc(2 * 20px + 74px);
   opacity: 1;          
 }
 
 .a_profile_about:hover ~ span {
   left: calc(
     5px +
-    (2 * 20px + 72px) +
+    (2 * 20px + 74px) +
     15px
   );
   width: calc(2 * 20px + 48px);
@@ -710,5 +710,6 @@ ul {
 .hero-section {
   filter: brightness(1.2);
 }
+
 
 
